@@ -54,3 +54,34 @@ By the end of March i'll (hopefuly) have all my stacks decided.
 - CI/CD with Github Actions
 - ?
 
+## Entity Relationship Diagram
+```mermaid
+---
+config:
+  theme: dark
+---
+erDiagram
+    USERS {
+        uuid    id              PK
+        string  name
+        string  email
+        string  hashedPassword
+        string  role
+        int     karma
+        date    createdAt
+        date    updatedAt
+        date    deletedAt
+        
+    }
+    USERS ||--|| ROLES : has
+    ROLES {
+        int         id          PK
+        string      name
+        string[]    permissions
+    }
+    ROLES ||--o{ PERMISSIONS : has
+    PERMISSIONS {
+        int     id      PK
+        string  name
+    }
+```
