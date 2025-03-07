@@ -51,5 +51,6 @@ By the end of March i'll (hopefuly) have all my stacks decided.
 
 ## Future plans
 - Grafana
+- CI/CD with Github Actions
 - ?
 
