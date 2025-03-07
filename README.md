@@ -8,7 +8,7 @@ Stacks are rated by knowledge and comfort level. Some of this ratings are what i
 🔼 I'm ok with this. \
 ⏺️ I'm not sure. \
 🔽 I will struggle. \
-⏬ I will struggle a lot and take much more time. \
+⏬ I will struggle a lot and take much more time.
 
 By the end of March i'll (hopefuly) have all my stacks decided.
 
