@@ -66,22 +66,26 @@ erDiagram
         string  name
         string  email
         string  hashedPassword
-        string  role
+        id      role            FK
         int     karma
         date    createdAt
         date    updatedAt
         date    deletedAt
         
     }
-    USERS ||--|| ROLES : has
+    USERS ||--o| ROLES : has
     ROLES {
         int         id          PK
         string      name
-        string[]    permissions
     }
-    ROLES ||--o{ PERMISSIONS : has
+    ROLES ||--o| PERMISSIONS : contains
     PERMISSIONS {
         int     id      PK
         string  name
     }
+    ROLES_PERMISSIONS {
+        int role_id         FK
+        int permission_id   FK
+    }
+
 ```
