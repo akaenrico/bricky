@@ -3,12 +3,12 @@
 
 ---
 # Stack
-Stacks are rated by knowledge and comfort level. Some of this ratings are what i **believe** and not what i know, so take it with a grain of salt.
-⏫ I'm comfortable with this.
-🔼 I'm ok with this.
-⏺️ I'm not sure.
-🔽 I will struggle.
-⏬ I will struggle a lot and take much more time.
+Stacks are rated by knowledge and comfort level. Some of this ratings are what i **believe** and not what i know, so take it with a grain of salt. \
+⏫ I'm comfortable with this. \
+🔼 I'm ok with this. \
+⏺️ I'm not sure. \
+🔽 I will struggle. \
+⏬ I will struggle a lot and take much more time. \
 
 By the end of March i'll (hopefuly) have all my stacks decided.
 
