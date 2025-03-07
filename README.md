@@ -1,4 +1,4 @@
-**Build your community brick by brick.**
+**Build your community brick by brick.** \
 (Starting this project on 2025/03/07)
 
 ---
@@ -13,7 +13,7 @@ Stacks are rated by knowledge and comfort level. Some of this ratings are what i
 By the end of March i'll (hopefuly) have all my stacks decided.
 
 ## Backend
-- ASP.NET Core 🔼
+- ASP.NET Core ⏺️
 - Java Spring Boot ⏬
 - Ruby on Rails ⏬
 - Laravel ⏬
