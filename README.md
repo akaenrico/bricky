@@ -21,7 +21,7 @@ By the end of March i'll (hopefuly) have all my stacks decided.
 
 ## Frontend
 - Svelte 🔼
-- Vue ⏫️
+- Vue ⏫️ ✅
 - Blazor ⏺️
 - React Native ⏬
 - React 🔽
