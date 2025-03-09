@@ -61,6 +61,7 @@ config:
   theme: dark
 ---
 erDiagram
+    %% SQL
     USERS {
         uuid    id              PK
         string  name
@@ -88,4 +89,19 @@ erDiagram
         int permission_id   FK
     }
 
+    %% noSQL
+    POSTS {
+        ObjectId    _id
+        string      user_id
+        string      community_id
+        string      title
+        string      content
+        string[]    tags
+        int         comments
+        int         votes
+        string[]    awards
+        date        createdAt
+        date        updatedAt
+        date        deletedAt
+    }
 ```
