@@ -1,0 +1,75 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Bricky",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "health"
+    }
+  ],
+  "paths": {
+    "/status": {
+      "get": {
+        "summary": "Status",
+        "deprecated": false,
+        "description": "Gets API current health status and version.",
+        "tags": [
+          "health"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Current status"
+                    },
+                    "version": {
+                      "type": "string",
+                      "description": "API Current Version"
+                    }
+                  },
+                  "required": [
+                    "status",
+                    "version"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "Success",
+                    "description": "",
+                    "value": {
+                      "status": "ok",
+                      "version": "4.0.4"
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  },
+  "servers": [
+    {
+      "url": "{{Environment_URL}}",
+      "description": "Develop Env"
+    }
+  ],
+  "security": []
+}
