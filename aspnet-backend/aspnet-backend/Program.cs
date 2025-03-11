@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components.Web;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +15,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.MapScalarApiReference();
+    app.MapScalarApiReference(options =>
+        {
+            options.Title = "Bricky API";
+            options.DarkMode = true;
+        }
+    );
 }
 
 app.UseHttpsRedirection();
