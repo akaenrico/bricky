@@ -1,0 +1,6 @@
+﻿services:
+  aspnet-backend:
+    image: aspnet-backend
+    build:
+      context: .
+      dockerfile: aspnet-backend/Dockerfile
