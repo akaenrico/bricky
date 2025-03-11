@@ -13,11 +13,11 @@ Stacks are rated by knowledge and comfort level. Some of this ratings are what i
 By the end of March i'll (hopefuly) have all my stacks decided.
 
 ## Backend
-- ASP.NET Core ⏺️
-- Java Spring Boot ⏬
+- ASP.NET Core ⏺️ 🥇
+- Java Spring Boot ⏬ 🥈
 - Ruby on Rails ⏬
 - Laravel ⏬
-- NestJS ⏫
+- NestJS ⏫ 🥉
 
 ## Frontend
 - Svelte 🔼
@@ -36,12 +36,12 @@ By the end of March i'll (hopefuly) have all my stacks decided.
 - ScyllaDB ⏬
 - Cassandra ⏬
 
-### Visualization
+### Data Visualization
 - PGAdmin ⏫ 
 - Adminer 🔼
 - TablePlus ⏺️
 
-## Reverse Proxy
+## Reverse Proxy (Do i even need it for this project?)
 - Nginx ⏬
 - Apache HTTP Server ⏬
 
