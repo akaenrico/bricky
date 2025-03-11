@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Components.Web;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
