@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Bricky.Models;
+namespace aspnet_backend.Models;
 
 public class User
 {
