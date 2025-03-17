@@ -37,7 +37,7 @@ By the end of March i'll (hopefuly) have all my stacks decided.
 - Cassandra ⏬
 
 ### Data Visualization
-- PGAdmin ⏫ 
+- PGAdmin ⏫ ✅
 - Adminer 🔼
 - TablePlus ⏺️
 
