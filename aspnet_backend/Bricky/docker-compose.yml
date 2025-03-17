@@ -1,0 +1,63 @@
+services:
+  postgresql:
+    image: postgres:17
+    container_name: postgresql_container
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: development
+      POSTGRES_DB: bricky
+      PGDATA: /data/postgres
+    volumes:
+      - postgres_data:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - bricky
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:8
+    container_name: mongodb_container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: development
+      MONGO_INITDB_DATABASE: bricky
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - "27017:27017"
+    networks:
+      - bricky
+    restart: unless-stopped
+    command: [ --auth ]
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: placeholder@mail.com
+      PGADMIN_DEFAULT_PASSWORD: development
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - bricky
+    restart: unless-stopped
+    depends_on:
+      - postgresql
+
+networks:
+  bricky:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    name: postgres_data_volume
+  mongodb_data:
+    name: mongodb_data_volume
+  mongodb_config:
+    name: mongodb_config_volume
+  pgadmin_data:
+    name: pgadmin_data_volume
